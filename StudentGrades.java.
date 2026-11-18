@@ -1,0 +1,36 @@
+import java.util.HashMap;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        HashMap<String, Integer> studentGrades = new HashMap<String, Integer>();
+
+        //Add
+        studentGrades.put("John", 90);
+        studentGrades.put("Mary", 95);
+        studentGrades.put("Peter", 85);
+        studentGrades.put("Anna", 92);
+
+        // Duplicate
+        studentGrades.put("John", 98);
+
+        //Display all
+        System.out.println(studentGrades);
+
+        //Display specific
+        System.out.println(studentGrades.get("Mary"));
+
+        //Remove
+        studentGrades.remove("Peter");
+
+        System.out.println(studentGrades);
+
+        //Clear All
+        studentGrades.clear();
+
+        //Display all
+        System.out.println(studentGrades);
+
+    }
+}
